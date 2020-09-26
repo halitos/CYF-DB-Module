@@ -49,7 +49,7 @@ A database is a structured set of data held in a computer. It provides ways to s
 
 ### Why do we need them?
 
-In the past few weeks, you stored and retrieved data using files. This is fine for simple data but it can quickly become an issue as your application becomes more complex and needs to store and manipulate more complicated data. For example, imagine you want to develop the next biggest hotel booking application. You will need to store the list of hotels available for booking somewhere, and as you add more features, you will need to save users information, the reviews they post for each hotel, but also the bookings each user makes. You can see that the data you need to handle can become very complicated, especially when you need to consider that data are not static, as they can be updated or deleted. To work more effectively with data, we can then use a database, which presents the following benefits:
+In the past few weeks, you stored and retrieved data using files. This is fine for simple data but it can quickly become an issue as your application becomes more complex and needs to store and manipulate more complicated data. For example, imagine you are asked to develop a booking system for a medium-sized hotel. You will need to store the list of rooms available for booking, and as you add more features, you will need to save users information, the reviews they post, the bookings each user makes and payment information. You can see that the data you need to handle can become very complicated, especially when you need to consider that data are not static, as they can be updated or deleted. To work more effectively with data, we can then use a database, which presents the following benefits:
 
 - A database defines a structure for your data and the relationships between entities
 - A database provides convenient and performant ways to safely store and retrieve data
@@ -541,12 +541,10 @@ INSERT INTO customers (name, email, address, city, postcode, country)
 ```
 Note that the order of values in the `VALUES (...)` clause must correspond to the columns in the column name list. The first value is stored in the first named column, the second value in the second named column and so forth.
 
-#### Exercise 6
+### Exercise 6
 
-- Insert yourself in the `customers` table. Query the table to check your new data.
-- Insert a new room type of PENTHOUSE with a default rate of 185.00.
-- Add two new rooms, 501 and 502, of type PENTHOUSE and set the rate to the same as the default for that room type.
-- Try to insert a reservation for a customer id that does not exist in the `customers` table (for example ID `1000`). What is happening and why?
+1. Insert yourself in the `customers` table. Query the table to check your new data.
+2. Insert a new room type of PENTHOUSE with a default rate of 185.00.
 
 ---
 ## Summary
